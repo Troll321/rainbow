@@ -1,6 +1,6 @@
 /** @type {HTMLCanvasElement} */
-const ww = window.innerWidth;
-const wh = window.innerHeight;
+var ww = window.innerWidth;
+var wh = window.innerHeight;
 const canvas = document.getElementsByTagName("canvas")[0];
 const c = canvas.getContext("2d");
 var mouse = {x: ww/2, y: wh/2};
@@ -12,6 +12,16 @@ canvas.width = ww;
 canvas.height = wh;
 const max = 8;
 const min = 0;
+ww = window.innerWidth;
+wh = window.innerHeight;
+canvas.width = ww;
+canvas.height = wh;
+window.addEventListener("resize", ()=>{
+    ww = window.innerWidth;
+    wh = window.innerHeight;
+    canvas.width = ww;
+    canvas.height = wh;
+})
 
 const color = [
     "#ff0000", "#ffa500", "#ffff00", "#008000", "#0000ff", "#4b0082", "#ee82ee"
