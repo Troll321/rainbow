@@ -122,7 +122,7 @@ canvas{
 }
 @keyframes blur{
     to{
-        filter: blur(200px);
+        filter: blur(12.5em);
     }
 }
 @keyframes top-to-bottom{
